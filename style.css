@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif !important;
+  transition: 1000ms;
+  overflow-x: hidden;
+}
+
+#hero {
+  background-image: url(assets/hero.png) !important;
+  background-size:     cover;                  
+  background-repeat:   no-repeat;
+  background-position: center center;
+  width: auto;
+  height: 100vh;
+  color: black;
+  display: flex;
+  margin-top: 4rem;
+  padding: 0 14%;
+}
+#hero img {
+  max-width: 40rem;
+  max-height: auto;
+}
+#hero div {
+  width: 50%;
+  margin: 25% auto;
+}
+h2 {
+  font-size: 3rem !important;
+  color: rgb(66, 66, 66);
+  font-weight: 500;
+}
+p {
+  font-size: 1rem;
+  color: rgb(97, 97, 97);
+  font-weight: 500;
+}
+
+.sign {
+  font-size: 1.5rem;
+  position: relative;
+  top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: blue;
+  color: white;
+  border-radius: 0.5rem;
+}
+.sign:hover {
+  transition: 1000ms;
+  opacity: 0.7;
+}
+
+#features {
+  text-align: center;
+  background-image: url(assets/feature.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 0;
+}
+h3 {
+  font-size: 3rem !important;
+  color: rgb(75, 75, 75);
+  font-weight: 500;
+}
+#features p {
+  margin-bottom: 3rem !important;
+}
+.card {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  background-image: url(assets/cards.png);
+  width: 20%;
+  height: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 2rem;
+  color: aliceblue;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.cards p {
+  color: rgb(169, 182, 194);
+  padding: 0 1rem;
+}
+.f-img {
+  width: 150px;
+  border-radius: 100%;
+  margin: 1rem auto;
+
+}
+h4 {
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  margin-top: 8rem !important;
+}
+
+h5 {
+  font-size: 3rem !important;
+  font-weight: 500;
+  color: rgb(35, 38, 39);
+  margin-top: 3rem;
+}
+.beta-img {
+  width: 50%;
+  margin: 1rem auto;
+  margin-top: 5rem;
+  border: 0.2rem solid gray;
+  border-radius: 2rem;
+  background-color: white;
+  background-blend-mode: darken;
+}
+
+#footer {
+  background-image: url(assets/f2.png);
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+.ft-h5 {
+  font-size: 3.5rem;
+  margin-top: 30rem;
+  color: aliceblue;
+}
+#footer p {
+  color: aliceblue;
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  height: 4rem;
+  font-size: 16px;
+}
+
+@media (max-width:1165px) {
+  #hero img {
+    width: 25rem;
+    height: fit-content;
+    position: relative;
+    top: 10rem;
+  }
+  #hero {
+    padding: 0 2%;
+  }
+  .beta-img {
+    margin-top: 6rem;
+    width: 65%;
+  }
+}
+@media (max-width:750px) {
+  #hero img {
+    display: none;
+  }
+  #hero {
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #hero div {
+    width: auto;
+    height: 40vh;
+    position: relative;
+    top: 6rem;
+  }
+  #features {
+    padding: 0 2rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    width: 300px;
+    height: 400px;
+  }
+  .beta-img {
+    margin-top: 6rem;
+    width: 98%;
+  }
+  .ft-h5 {
+    position: relative;
+    top: -10rem;
+  }
+  #footer a {
+    position: relative;
+    top: -9rem;
+  }
+  #footer p {
+    position: relative;
+    top: -10rem;
+  }
+}
